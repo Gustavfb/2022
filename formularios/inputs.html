@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INPUTS DO HTML</title>
+  </head>
+  <body>
+    <h1>INPUTS DO HTML</h1>
+    <form action="">
+      <!--INPUT DO TIPO TEXTO-->
+      <!---O FOR direciona para o campo-->
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required />
+      <!--required é obrigatorio-->
+      <br /><br /><br />
+
+      <!--campo do tipo email-->
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required />
+
+      <br /><br /><br />
+
+      <!---campo do tipo senha-->
+      <label for="password">Senha</label>
+      <input type="password" id="password" name="password" required />
+      <br /><br /><br />
+
+      <!---campo do tipo genero-->
+      <label>Genero</label><br />
+      <input type="radio" id="masculino" name="genero" value="m" />
+      <label for="masculino">masculino</label>
+      <input type="radio" id="feminino" name="genero" value="f" />
+      <label for="feminino">feminino</label>
+      <br /><br /><br />
+
+      <!---campo de escolha multipla-->
+      <label>Interesses:</label><br />
+      <input type="checkbox" id="backend" value="backend" name="Interesses" />
+      <label for="backend">backend</label>
+
+      <input type="checkbox" id="frontend" value="frontend" name="Interesses" />
+      <label for="frontend">frontend</label>
+
+      <input type="checkbox" id="mobile" value="mobile" name="Interesses" />
+      <label for="mobile">mobile</label>
+      <br /><br />
+
+      <!---campo de data-->
+      <label for="data_nascimento">Data de nascimento</label>
+      <input type="date" id="data_nascimento" name="data_nascimento" />
+      <br /><br /><br />
+
+      <!---campo de arquivos-->
+      <label for="foto">Arquivo</label>
+      <input type="file" id="foto" name="foto" />
+      <br /><br /><br />
+
+      <!---campo de caixa de seleção-->
+      <label for="situacao">Situacao atual: </label>
+      <select name="situacao" id="situacao">
+        <option value="" selected disabled>Selecione uma das opções</option>
+        <option value="estudante">Estudante</option>
+        <option value="estudante">Formado</option>
+        <option value="estudante">Desempregado</option>
+        <option value="estudante">A procura de um emprego</option>
+        <option value="estudante">Estagiario</option>
+      </select>
+      <br /><br /><br />
+
+      <!--Campo de textarea-->
+      <label for="sobre">Sobre mim</label><br />
+      <textarea
+        name="sobre"
+        id="sobre"
+        cols="30"
+        rows="10"
+        placeholder="Fale um pouco sobre voce ..."
+      ></textarea>
+      <br /><br />
+      <button type="submit">ENVIAR</button>
+    </form>
+  </body>
+</html>

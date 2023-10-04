@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+  </head>
+  <body>
+    <h1>Criação de Tabelas</h1>
+    <!--Table cria a tabela-->
+    <table>
+      <tr>
+        <!--O tr significa linha de tabela-->
+        <td>dado 1</td>
+        <!--é uma celula com dados, uma coluna-->
+        <td>dado 2</td>
+      </tr>
+      <tr>
+        <td>dado 3</td>
+        <td>dado 4</td>
+      </tr>
+    </table>
+    <hr />
+    <h1>TABELA COM CABEÇALHO</h1>
+    <table>
+      <thead>
+        <!--Organizando desse modo, o que fica em thead é o cabeçalho e o que fica em tbody é o corpo da tabela-->
+        <tr>
+          <th>nome</th>
+          <th>idade</th>
+          <th>data de nascimento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Joao</td>
+          <td>22</td>
+          <td>23/09/2001</td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>20</td>
+          <td>24/09/2003</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h1>Tabelas com celulas personalizadas</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <!--Linha-->
+          <th colspan="2">Informações pessoais</th>
+          <!--colspan diz que ele usa 2 espaços na tabela-->
+          <th>Contato</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nome:</td>
+          <td>Joao</td>
+          <td rowspan="2">Telefone</td>
+          <!--o rowspan diz que ele ocupa 2 linhas-->
+          <td>519999999</td>
+        </tr>
+        <tr>
+          <td>Idade:</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicios</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <h1>Formulario de Inscrição</h1>
+
+      <div>
+        <!--campo de nome-->
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" />
+        <br /><br />
+      </div>
+
+    <div>
+      <!--campo de email-->
+      <label for="email">E-mail:</label><br />
+      <input type="email" id="email" name="email" />
+      <br /><br />
+    </div>
+
+    <div>
+      <!--campo de telefone-->
+      <label for="telefone">WhatsApp:</label><br />
+      <input type="tel" id="telefone" name="telefone" />
+      <br /><br />
+    </div>
+    
+    <div>
+        <!--campo de area de atuacao-->
+        <label>Area de atuação:</label> <br />
+        <input type="radio" id="desenvolvimento" name="area" />
+        <label for="desenvolvimento">Desenvolvimento</label>
+        
+        <input type="radio" id="QA" name="area" />
+        <label for="QA">Quality Assurance(QA)</label>
+
+        <input type="radio" id="analiseDados" name="area" />
+        <label for="analiseDados">Análise de Dados</label>
+
+        <input type="radio" id="infra" name="area" />
+        <label for="infra">Infraestrutura</label>
+        <br /><br />
+    </div>
+    
+    <div>
+        <!--campo de area de atuacao-->
+        <label for="obs">Observações:</label><br />
+        <textarea name="obs" id="obs" cols="15" rows="2"></textarea>
+        <br /><br />
+    </div>
+
+    <div>
+        <!--campo de checkbox de info por email-->
+        <input type="checkbox" id="novidades" name="novidades" value="s" />
+        <label for="novidades">Desejo receber novidades por email.</label>
+        <br /><br />
+    <div>
+      <!---botao-->
+      <button type="submit">ENVIAR</button>
+    </form>
+  </body>
+</html>
